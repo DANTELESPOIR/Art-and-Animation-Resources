@@ -1,9 +1,17 @@
 Body
 {
-    padding: 5vh;
+    padding: 2vh;
     background-color: rgb(0, 0, 0);
     border: rgb(255, 255, 255) solid 1vh;
     border-radius: 5vh;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+  
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+
 }
 
 h1
@@ -48,4 +56,15 @@ a :hover
 {
     color: rgb(43, 255, 0);
     font-weight:1000;
+}
+
+/* hide scrollbar but allow scrolling */
+element {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+}
+
+element::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
 }
